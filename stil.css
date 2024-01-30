@@ -38,7 +38,7 @@ body {
 /* Add display flex to row to fix footer at the bottom */
 .row {
   display: flex;
-  width: 100%;
+  width: 80%;
 }
 
 /* image */
