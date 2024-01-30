@@ -9,42 +9,26 @@ body {
   margin: 0;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 /* Header/Blog Title */
 .header {
   padding: 30px;
   font-size: 40px;
   text-align: center;
   background: white;
-  width: 100%;
 }
 
 /* Create two unequal columns that float next to each other */
 /* Left column */
 .leftcolumn {
-  flex: 0 0 75%;
+  float: left;
+  width: 75%;
 }
 
 /* Right column */
 .rightcolumn {
-  flex: 0 0 25%;
+  float: left;
+  width: 25%;
   padding-left: 20px;
-}
-
-/* Add display flex to row to fix footer at the bottom */
-.row {
-  display: flex;
-  width: 80%;
-}
-
-/* image */
-.img {
-  width: 50%;
-  padding: 20px;
 }
 
 /* Add a card effect for articles */
@@ -52,7 +36,6 @@ body {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
-  width: 100%; /* Ensure cards take full width of their container */
 }
 
 /* Clear floats after the columns */
@@ -67,7 +50,7 @@ body {
   padding: 20px;
   text-align: center;
   background: #ddd;
-  margin-top: auto; /* Auto margin-top to push it to the bottom */
+  margin-top: 20px;
   width: 100%;
 }
 
