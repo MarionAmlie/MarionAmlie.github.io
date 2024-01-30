@@ -16,7 +16,7 @@ body {
   background: white;
 }
 
-/* Create two unequal columns that floats next to each other */
+/* Create two unequal columns that float next to each other */
 /* Left column */
 .leftcolumn {
   float: left;
@@ -28,6 +28,11 @@ body {
   float: left;
   width: 25%;
   padding-left: 20px;
+}
+
+/* Add display flex to row to fix footer at the bottom */
+.row {
+  display: flex;
 }
 
 /* image */
@@ -55,7 +60,15 @@ body {
   padding: 20px;
   text-align: center;
   background: #ddd;
-  margin-top: 20px;
+  margin-top: auto; /* Auto margin-top to push it to the bottom */
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
