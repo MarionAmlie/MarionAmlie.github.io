@@ -33,7 +33,6 @@ body {
 
 .main-content {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .post {
@@ -42,6 +41,24 @@ body {
   padding: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+.sidebar {
+  flex: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us,
+.contact {
+  background: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.about-us h2,
+.contact h2 {
+  color: #4CAF50;
 }
 
 .post h2 {
@@ -59,6 +76,7 @@ body {
   height: auto;
   display: block;
 }
+
 
 .about-us,
 .contact {
@@ -79,4 +97,20 @@ body {
   background: #333;
   color: #fff;
   margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
