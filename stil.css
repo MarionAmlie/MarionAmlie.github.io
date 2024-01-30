@@ -7,6 +7,9 @@ body {
   padding: 20px;
   background: #f1f1f1;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header/Blog Title */
@@ -17,17 +20,20 @@ body {
   background: white;
 }
 
-/* Create two unequal columns that float next to each other */
+/* Create two unequal columns using flexbox */
+.row {
+  display: flex;
+}
+
 /* Left column */
 .leftcolumn {
-  float: left;
-  width: 75%;
+  flex: 75%;
+  padding-right: 20px;
 }
 
 /* Right column */
 .rightcolumn {
-  float: left;
-  width: 25%;
+  flex: 25%;
   padding-left: 20px;
 }
 
@@ -36,13 +42,7 @@ body {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  width: 100%;
 }
 
 /* Footer */
@@ -50,10 +50,9 @@ body {
   padding: 20px;
   text-align: center;
   background: #ddd;
-  margin-top: 20px;
+  margin-top: auto;
   width: 100%;
 }
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
