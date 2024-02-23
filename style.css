@@ -35,14 +35,14 @@ body {
   display: flex;
 }
 
-  .post {
-  flex: 0 0 100%;
+ .post {
+  flex: 0 0 calc(60% - 20px);
   background: #fff;
   padding: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
 }
-}
+
 
 .sidebar {
   flex: 40%;
