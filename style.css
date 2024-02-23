@@ -33,23 +33,21 @@ body {
 
 .main-content {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  flex-wrap: wrap;
 }
 
 .post {
-  flex: 0 0 calc(60% - 20px);
+  flex: 0 0 100%;
   background: #fff;
   padding: 20px;
-  margin-right: 20px;
   margin-bottom: 20px;
   box-sizing: border-box;
-  width: 100%; /* Take up full width on smaller screens */
 }
 
 .sidebar {
-  flex: 0 0 40%; /* Set the width of the sidebar */
-  display: flex;
-  flex-direction: column;
+  flex: 0 0 calc(40% - 20px);
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .about-us,
