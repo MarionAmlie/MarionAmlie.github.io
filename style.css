@@ -37,9 +37,10 @@ body {
 }
 
 .post {
-  flex: 0 0 100%;
+  flex: 0 0 calc(60% - 20px);
   background: #fff;
   padding: 20px;
+  margin-right: 20px;
   margin-bottom: 20px;
   box-sizing: border-box;
 }
