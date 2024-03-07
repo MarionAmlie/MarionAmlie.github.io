@@ -33,11 +33,11 @@ body {
 
 .main-content {
   display: flex;
-  flex-direction: column;
 }
 
 .post {
-  flex: 60%;
+  flex: 60%; 
+  flex-direction: column;
   background: #fff;
   padding: 20px;
   margin-right: 20px;
