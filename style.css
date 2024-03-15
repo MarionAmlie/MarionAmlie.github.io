@@ -33,49 +33,21 @@ body {
 
 .main-content {
   display: flex;
-  flex-wrap: wrap-reverse; /* Reverse the order of the flex items on smaller screens */
+  flex-wrap: wrap;
 }
 
 .post {
-  flex: 60%;
+  flex: 70%; /* Adjusted width for the posts */
   background: #fff;
   padding: 20px;
-  margin-right: 20px;
   margin-bottom: 20px;
 }
 
 .sidebar {
-  flex: 40%;
-  order: -1; /* Move the sidebar to the right on larger screens */
-}
-
-.about-us,
-.contact {
-  flex: 100%; /* Take up the full width on smaller screens */
+  flex: 30%; /* Adjusted width for the sidebar */
   background: #f9f9f9;
   padding: 20px;
-  margin-bottom: 20px;
-}
-
-.about-us h2,
-.contact h2 {
-  color: #4CAF50;
-}
-
-.post h2 {
-  color: #4CAF50;
-}
-
-.img-container {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.img-container img {
-  width: 100%;
-  height: auto;
-  display: block;
+  margin-left: auto; /* Push the sidebar to the right */
 }
 
 .footer {
@@ -83,7 +55,7 @@ body {
   text-align: center;
   background: #333;
   color: #fff;
-  margin-top: 20px;
+  clear: both; /* Clear floats */
 }
 
 @media screen and (max-width: 800px) {
@@ -92,13 +64,9 @@ body {
   }
 
   .post,
-  .about-us,
-  .contact {
+  .sidebar {
     flex: 100%;
     margin-right: 0;
-  }
-
-  .sidebar {
-    order: 0; /* Move the sidebar back to its original position on smaller screens */
+    margin-left: 0;
   }
 }
